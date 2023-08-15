@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  dev-db:
+    image: postgres:13
+    ports: 
+      - 5440:5432
+    environment:
+      POSTGRES_USER: prisma_user
+      POSTGRES_PASSWORD: prisma_user
+      POSTGRES_DB: nestjs_api_tutorial
+    networks:
+      - nestjstutorial
+  test-db:
+    image: postgres:13
+    ports: 
+      - 5441:5432
+    environment:
+      POSTGRES_USER: prisma_user
+      POSTGRES_PASSWORD: prisma_user
+      POSTGRES_DB: nestjs_api_tutorial
+    networks:
+      - nestjstutorial
+networks:
+  nestjstutorial:
