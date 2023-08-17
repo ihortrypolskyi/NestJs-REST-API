@@ -8,6 +8,5 @@ https://www.youtube.com/watch?v=GHTA143_b-s&t=9191s
 
 
 ### tests
-#### npx dotenv -e .env.test -- prisma studio
 #### npm run db:test:restart
 #### npm run test:e2e

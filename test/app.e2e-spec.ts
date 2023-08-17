@@ -4,7 +4,7 @@ import { AppModule } from "../src/app.module";
 import * as pactum from 'pactum'
 
 import { PrismaService } from "../src/prisma/prisma.service";
-import { AuthDto } from "src/dto";
+import { AuthDto } from "src/auth/dto";
 import { EditUserDto } from "src/user/dto";
 import { CreateBookmarkDto, EditBookmarkDto } from "src/bookmark/dto";
 
